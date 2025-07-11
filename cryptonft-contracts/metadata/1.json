@@ -1,0 +1,28 @@
+{
+  "name": "CryptoNFT #1",
+  "description": "Um NFT exclusivo da coleção CryptoNFT que pode ser adquirido com tokens fungíveis.",
+  "image": "https://ipfs.io/ipfs/QmYourImageHashHere",
+  "external_url": "https://cryptonft.example.com",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Generation",
+      "value": 1
+    },
+    {
+      "display_type": "date",
+      "trait_type": "Birthday",
+      "value": 1672531200
+    }
+  ],
+  "background_color": "000000",
+  "animation_url": "https://ipfs.io/ipfs/QmYourAnimationHashHere",
+  "youtube_url": "https://www.youtube.com/watch?v=example"
+}

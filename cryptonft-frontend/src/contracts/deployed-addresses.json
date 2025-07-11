@@ -1,0 +1,56 @@
+{
+  "network": "localhost",
+  "chainId": 1337,
+  "rpcUrl": "http://localhost:7545",
+  "contracts": {
+    "CryptoToken": {
+      "address": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+      "abi": [
+        "constructor()",
+        "function name() view returns (string)",
+        "function symbol() view returns (string)",
+        "function decimals() view returns (uint8)",
+        "function totalSupply() view returns (uint256)",
+        "function balanceOf(address) view returns (uint256)",
+        "function transfer(address to, uint256 amount) returns (bool)",
+        "function allowance(address owner, address spender) view returns (uint256)",
+        "function approve(address spender, uint256 amount) returns (bool)",
+        "function transferFrom(address from, address to, uint256 amount) returns (bool)",
+        "function mint(address to, uint256 amount)",
+        "function burn(uint256 amount)",
+        "event Transfer(address indexed from, address indexed to, uint256 value)",
+        "event Approval(address indexed owner, address indexed spender, uint256 value)"
+      ]
+    },
+    "CryptoNFT": {
+      "address": "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+      "abi": [
+        "constructor(address _tokenContract)",
+        "function name() view returns (string)",
+        "function symbol() view returns (string)",
+        "function tokenURI(uint256 tokenId) view returns (string)",
+        "function ownerOf(uint256 tokenId) view returns (address)",
+        "function balanceOf(address owner) view returns (uint256)",
+        "function approve(address to, uint256 tokenId)",
+        "function getApproved(uint256 tokenId) view returns (address)",
+        "function setApprovalForAll(address operator, bool approved)",
+        "function isApprovedForAll(address owner, address operator) view returns (bool)",
+        "function transferFrom(address from, address to, uint256 tokenId)",
+        "function safeTransferFrom(address from, address to, uint256 tokenId)",
+        "function mintNFT(address to, string memory uri) returns (uint256)",
+        "function purchaseNFT(uint256 tokenId)",
+        "function listNFTForSale(uint256 tokenId, uint256 price)",
+        "function setPrice(uint256 _price)",
+        "function getPrice() view returns (uint256)",
+        "function getTokenContract() view returns (address)",
+        "event Transfer(address indexed from, address indexed to, uint256 indexed tokenId)",
+        "event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId)",
+        "event ApprovalForAll(address indexed owner, address indexed operator, bool approved)"
+      ]
+    }
+  },
+  "accounts": {
+    "deployer": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1"
+  },
+  "deployedAt": "2025-01-11T12:00:00.000Z"
+}
